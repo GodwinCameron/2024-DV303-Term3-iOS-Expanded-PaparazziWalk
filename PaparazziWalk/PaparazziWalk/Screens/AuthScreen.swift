@@ -14,7 +14,9 @@ struct AuthScreen: View {
     @State var password : String = ""
     @State var repeatPassword : String = ""
     
-    @State var RegisterMethod : Bool = true
+    @State var RegisterMethod : Bool = false
+    
+    @Binding var Authorised: Bool
     
     var body: some View {
         VStack{
@@ -67,7 +69,10 @@ struct AuthScreen: View {
                     Spacer()
                         .frame(height: 50)
                     
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+//                    NavigationLink(destination: DashScreen()) {
+//                        Text("Login")
+//                    }
+                    Button(action: {Authorised = true}, label: {
                         Text("Login")
                     })
                     .foregroundColor(.white)
@@ -138,7 +143,10 @@ struct AuthScreen: View {
                     Spacer()
                         .frame(height: 50)
                     
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+//                    NavigationLink(destination: DashScreen()) {
+//                        Text("Register")
+//                    }
+                    Button(action: {Authorised = true}, label: {
                         Text("Register")
                     })
                     .foregroundColor(.white)
@@ -192,6 +200,6 @@ struct AuthScreen: View {
     }
 }
 
-#Preview {
-    AuthScreen()
-}
+//#Preview {
+//    AuthScreen()
+//}

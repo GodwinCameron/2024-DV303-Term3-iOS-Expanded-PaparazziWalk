@@ -21,6 +21,8 @@
 		D684CB502C6797670026B85E /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = D684CB442C6797660026B85E /* OFL.txt */; };
 		D684CB512C6797670026B85E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D684CB452C6797660026B85E /* README.txt */; };
 		D684CB542C67A9150026B85E /* DashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D684CB532C67A9150026B85E /* DashScreen.swift */; };
+		D684CB562C67D7AB0026B85E /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D684CB552C67D7AB0026B85E /* ProfileScreen.swift */; };
+		D684CB582C67D7C90026B85E /* CelebScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D684CB572C67D7C90026B85E /* CelebScreen.swift */; };
 		D6EEA0BF2C53988F00C45B87 /* PaparazziWalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA0BE2C53988F00C45B87 /* PaparazziWalkApp.swift */; };
 		D6EEA0C12C53988F00C45B87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA0C02C53988F00C45B87 /* ContentView.swift */; };
 		D6EEA0C32C53989700C45B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6EEA0C22C53989700C45B87 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		D684CB452C6797660026B85E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		D684CB522C6797940026B85E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D684CB532C67A9150026B85E /* DashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashScreen.swift; sourceTree = "<group>"; };
+		D684CB552C67D7AB0026B85E /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		D684CB572C67D7C90026B85E /* CelebScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebScreen.swift; sourceTree = "<group>"; };
 		D6EEA0BB2C53988F00C45B87 /* PaparazziWalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaparazziWalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EEA0BE2C53988F00C45B87 /* PaparazziWalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaparazziWalkApp.swift; sourceTree = "<group>"; };
 		D6EEA0C02C53988F00C45B87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 			children = (
 				D684CB362C678F260026B85E /* AuthScreen.swift */,
 				D684CB532C67A9150026B85E /* DashScreen.swift */,
+				D684CB552C67D7AB0026B85E /* ProfileScreen.swift */,
+				D684CB572C67D7C90026B85E /* CelebScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -242,7 +248,9 @@
 				D6EEA0CE2C5399A100C45B87 /* HealthManager.swift in Sources */,
 				D6EEA0D32C539AA600C45B87 /* HealthView.swift in Sources */,
 				D6EEA0BF2C53988F00C45B87 /* PaparazziWalkApp.swift in Sources */,
+				D684CB582C67D7C90026B85E /* CelebScreen.swift in Sources */,
 				D684CB372C678F260026B85E /* AuthScreen.swift in Sources */,
+				D684CB562C67D7AB0026B85E /* ProfileScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

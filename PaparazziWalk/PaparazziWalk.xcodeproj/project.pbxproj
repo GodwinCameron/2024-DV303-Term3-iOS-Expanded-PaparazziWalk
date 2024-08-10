@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D684CB372C678F260026B85E /* AuthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D684CB362C678F260026B85E /* AuthScreen.swift */; };
+		D684CB462C6797670026B85E /* Outfit-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D684CB392C6797660026B85E /* Outfit-VariableFont_wght.ttf */; };
+		D684CB472C6797670026B85E /* Outfit-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D684CB3B2C6797660026B85E /* Outfit-Bold.ttf */; };
+		D684CB482C6797670026B85E /* Outfit-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D684CB3C2C6797660026B85E /* Outfit-Regular.ttf */; };
+		D684CB492C6797670026B85E /* Outfit-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D684CB3D2C6797660026B85E /* Outfit-Black.ttf */; };
+		D684CB4A2C6797670026B85E /* Outfit-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D684CB3E2C6797660026B85E /* Outfit-Thin.ttf */; };
+		D684CB4B2C6797670026B85E /* Outfit-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D684CB3F2C6797660026B85E /* Outfit-SemiBold.ttf */; };
+		D684CB4C2C6797670026B85E /* Outfit-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D684CB402C6797660026B85E /* Outfit-ExtraLight.ttf */; };
+		D684CB4D2C6797670026B85E /* Outfit-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D684CB412C6797660026B85E /* Outfit-ExtraBold.ttf */; };
+		D684CB4E2C6797670026B85E /* Outfit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D684CB422C6797660026B85E /* Outfit-Medium.ttf */; };
+		D684CB4F2C6797670026B85E /* Outfit-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D684CB432C6797660026B85E /* Outfit-Light.ttf */; };
+		D684CB502C6797670026B85E /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = D684CB442C6797660026B85E /* OFL.txt */; };
+		D684CB512C6797670026B85E /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D684CB452C6797660026B85E /* README.txt */; };
+		D684CB542C67A9150026B85E /* DashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D684CB532C67A9150026B85E /* DashScreen.swift */; };
 		D6EEA0BF2C53988F00C45B87 /* PaparazziWalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA0BE2C53988F00C45B87 /* PaparazziWalkApp.swift */; };
 		D6EEA0C12C53988F00C45B87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA0C02C53988F00C45B87 /* ContentView.swift */; };
 		D6EEA0C32C53989700C45B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6EEA0C22C53989700C45B87 /* Assets.xcassets */; };
@@ -17,6 +31,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D684CB362C678F260026B85E /* AuthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreen.swift; sourceTree = "<group>"; };
+		D684CB392C6797660026B85E /* Outfit-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		D684CB3B2C6797660026B85E /* Outfit-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Bold.ttf"; sourceTree = "<group>"; };
+		D684CB3C2C6797660026B85E /* Outfit-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Regular.ttf"; sourceTree = "<group>"; };
+		D684CB3D2C6797660026B85E /* Outfit-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Black.ttf"; sourceTree = "<group>"; };
+		D684CB3E2C6797660026B85E /* Outfit-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Thin.ttf"; sourceTree = "<group>"; };
+		D684CB3F2C6797660026B85E /* Outfit-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-SemiBold.ttf"; sourceTree = "<group>"; };
+		D684CB402C6797660026B85E /* Outfit-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-ExtraLight.ttf"; sourceTree = "<group>"; };
+		D684CB412C6797660026B85E /* Outfit-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-ExtraBold.ttf"; sourceTree = "<group>"; };
+		D684CB422C6797660026B85E /* Outfit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Medium.ttf"; sourceTree = "<group>"; };
+		D684CB432C6797660026B85E /* Outfit-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Light.ttf"; sourceTree = "<group>"; };
+		D684CB442C6797660026B85E /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		D684CB452C6797660026B85E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		D684CB522C6797940026B85E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D684CB532C67A9150026B85E /* DashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashScreen.swift; sourceTree = "<group>"; };
 		D6EEA0BB2C53988F00C45B87 /* PaparazziWalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaparazziWalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EEA0BE2C53988F00C45B87 /* PaparazziWalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaparazziWalkApp.swift; sourceTree = "<group>"; };
 		D6EEA0C02C53988F00C45B87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,9 +68,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D684CB352C678EFB0026B85E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D684CB362C678F260026B85E /* AuthScreen.swift */,
+				D684CB532C67A9150026B85E /* DashScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D684CB382C6797660026B85E /* OutfitFont */ = {
+			isa = PBXGroup;
+			children = (
+				D684CB392C6797660026B85E /* Outfit-VariableFont_wght.ttf */,
+				D684CB3A2C6797660026B85E /* static */,
+				D684CB442C6797660026B85E /* OFL.txt */,
+				D684CB452C6797660026B85E /* README.txt */,
+			);
+			path = OutfitFont;
+			sourceTree = "<group>";
+		};
+		D684CB3A2C6797660026B85E /* static */ = {
+			isa = PBXGroup;
+			children = (
+				D684CB3B2C6797660026B85E /* Outfit-Bold.ttf */,
+				D684CB3C2C6797660026B85E /* Outfit-Regular.ttf */,
+				D684CB3D2C6797660026B85E /* Outfit-Black.ttf */,
+				D684CB3E2C6797660026B85E /* Outfit-Thin.ttf */,
+				D684CB3F2C6797660026B85E /* Outfit-SemiBold.ttf */,
+				D684CB402C6797660026B85E /* Outfit-ExtraLight.ttf */,
+				D684CB412C6797660026B85E /* Outfit-ExtraBold.ttf */,
+				D684CB422C6797660026B85E /* Outfit-Medium.ttf */,
+				D684CB432C6797660026B85E /* Outfit-Light.ttf */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
 		D6EEA0B22C53988F00C45B87 = {
 			isa = PBXGroup;
 			children = (
+				D684CB382C6797660026B85E /* OutfitFont */,
 				D6EEA0BD2C53988F00C45B87 /* PaparazziWalk */,
 				D6EEA0BC2C53988F00C45B87 /* Products */,
 			);
@@ -58,6 +124,8 @@
 		D6EEA0BD2C53988F00C45B87 /* PaparazziWalk */ = {
 			isa = PBXGroup;
 			children = (
+				D684CB522C6797940026B85E /* Info.plist */,
+				D684CB352C678EFB0026B85E /* Screens */,
 				D6EEA0CF2C539A0700C45B87 /* PaparazziWalk.entitlements */,
 				D6EEA0CC2C53996000C45B87 /* HealthInfo */,
 				D6EEA0BE2C53988F00C45B87 /* PaparazziWalkApp.swift */,
@@ -144,8 +212,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D684CB472C6797670026B85E /* Outfit-Bold.ttf in Resources */,
+				D684CB462C6797670026B85E /* Outfit-VariableFont_wght.ttf in Resources */,
 				D6EEA0C62C53989700C45B87 /* Preview Assets.xcassets in Resources */,
+				D684CB4A2C6797670026B85E /* Outfit-Thin.ttf in Resources */,
+				D684CB482C6797670026B85E /* Outfit-Regular.ttf in Resources */,
 				D6EEA0C32C53989700C45B87 /* Assets.xcassets in Resources */,
+				D684CB4B2C6797670026B85E /* Outfit-SemiBold.ttf in Resources */,
+				D684CB4D2C6797670026B85E /* Outfit-ExtraBold.ttf in Resources */,
+				D684CB502C6797670026B85E /* OFL.txt in Resources */,
+				D684CB4F2C6797670026B85E /* Outfit-Light.ttf in Resources */,
+				D684CB4C2C6797670026B85E /* Outfit-ExtraLight.ttf in Resources */,
+				D684CB4E2C6797670026B85E /* Outfit-Medium.ttf in Resources */,
+				D684CB512C6797670026B85E /* README.txt in Resources */,
+				D684CB492C6797670026B85E /* Outfit-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,11 +236,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D684CB542C67A9150026B85E /* DashScreen.swift in Sources */,
 				D6EEA0C12C53988F00C45B87 /* ContentView.swift in Sources */,
 				D6EEA0D12C539A6A00C45B87 /* HealthStat.swift in Sources */,
 				D6EEA0CE2C5399A100C45B87 /* HealthManager.swift in Sources */,
 				D6EEA0D32C539AA600C45B87 /* HealthView.swift in Sources */,
 				D6EEA0BF2C53988F00C45B87 /* PaparazziWalkApp.swift in Sources */,
+				D684CB372C678F260026B85E /* AuthScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +380,7 @@
 				DEVELOPMENT_TEAM = X7X493CTRK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PaparazziWalk/Info.plist;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app would like to access your health data to display it here.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -329,6 +412,7 @@
 				DEVELOPMENT_TEAM = X7X493CTRK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PaparazziWalk/Info.plist;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app would like to access your health data to display it here.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

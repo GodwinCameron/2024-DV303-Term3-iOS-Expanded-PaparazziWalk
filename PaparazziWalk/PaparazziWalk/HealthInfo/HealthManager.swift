@@ -25,7 +25,9 @@ class HealthManager : ObservableObject
     //runs when the healthmanager is launched.
     init()
     {
+        print("*NEW* Initiated successfully")
         authoriseHealthAccess()
+        
     }
     
     //TODO: 2. check if we do have authority to access the health data
@@ -101,9 +103,11 @@ class HealthManager : ObservableObject
                                          image: "figure.walk.circle",
                                          color: .green
                 ))
+                print("*NEW* Steps: \(stepCountValue)")
             }
             
         }
+        healthStore.execute(query)
     }
     
 }

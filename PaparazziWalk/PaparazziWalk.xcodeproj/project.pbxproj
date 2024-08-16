@@ -44,6 +44,7 @@
 		D6EEA0CE2C5399A100C45B87 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA0CD2C5399A100C45B87 /* HealthManager.swift */; };
 		D6EEA0D12C539A6A00C45B87 /* HealthStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA0D02C539A6A00C45B87 /* HealthStat.swift */; };
 		D6EEA0D32C539AA600C45B87 /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA0D22C539AA600C45B87 /* HealthView.swift */; };
+		D6FEFB9A2C6F478C00F2B316 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FEFB992C6F478C00F2B316 /* FirebaseAuthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		D6EEA0CF2C539A0700C45B87 /* PaparazziWalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PaparazziWalk.entitlements; sourceTree = "<group>"; };
 		D6EEA0D02C539A6A00C45B87 /* HealthStat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStat.swift; sourceTree = "<group>"; };
 		D6EEA0D22C539AA600C45B87 /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
+		D6FEFB992C6F478C00F2B316 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 		D6EEA0BD2C53988F00C45B87 /* PaparazziWalk */ = {
 			isa = PBXGroup;
 			children = (
+				D6FEFB982C6F473F00F2B316 /* Auth */,
 				D684CB592C67E84B0026B85E /* CheckInDb */,
 				D684CB522C6797940026B85E /* Info.plist */,
 				D684CB352C678EFB0026B85E /* Screens */,
@@ -211,6 +214,15 @@
 				D6EEA0D22C539AA600C45B87 /* HealthView.swift */,
 			);
 			path = HealthInfo;
+			sourceTree = "<group>";
+		};
+		D6FEFB982C6F473F00F2B316 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D6FEFB992C6F478C00F2B316 /* FirebaseAuthManager.swift */,
+			);
+			name = Auth;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +330,7 @@
 				D6EEA0D32C539AA600C45B87 /* HealthView.swift in Sources */,
 				D684CB792C690FA80026B85E /* OnboardingThree.swift in Sources */,
 				D6EEA0BF2C53988F00C45B87 /* PaparazziWalkApp.swift in Sources */,
+				D6FEFB9A2C6F478C00F2B316 /* FirebaseAuthManager.swift in Sources */,
 				D684CB772C690E800026B85E /* OnboardingTwo.swift in Sources */,
 				D684CB582C67D7C90026B85E /* CelebScreen.swift in Sources */,
 				D684CB372C678F260026B85E /* AuthScreen.swift in Sources */,

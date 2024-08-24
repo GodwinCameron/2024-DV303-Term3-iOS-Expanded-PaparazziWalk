@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct DashScreen: View {
+    
+    @State var progressValue: Float = 0.0
+    
     var body: some View {
         VStack{
             HStack{
@@ -25,10 +28,18 @@ struct DashScreen: View {
                         Text("Your steps today")
                             .font(.system(size: 9))
                             .foregroundStyle(Color("Primary"))
-                            .padding()
+                            .padding(5)
                         Spacer()
-                        
                     }
+                    
+//                    ProgressBarCircle(progress: self.$progressValue)
+//                        .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 50)
+//                        .onAppear(){
+//                            self.progressValue = 0.50
+//                        }
+                    ProgressBar(width: 300, height: 20, percent: 20)
+                        .animation(.easeInOut(duration: 2.0))
+                    
                     Text("2,839")
                         .font(.system(size: 20))
                         .foregroundStyle(Color("Primary"))
@@ -48,7 +59,7 @@ struct DashScreen: View {
                         Text("more steps than you today")
                     }
                     .font(.system(size: 12))
-                    .padding()
+                    .padding(5)
                     
                     Button(action: {}, label: {
                         Text("Change Target")
@@ -135,6 +146,64 @@ struct DashScreen: View {
         
     }
 }
+
+
+///Code from a video guide: https://youtube.com/watch?v=ikoS43QtLYE
+struct ProgressBarCircle: View {
+    @Binding var progress: Float
+    var color: Color = Color("Primary")
+    
+    var body: some View{
+        ZStack {
+            Circle()
+                .stroke(lineWidth: 20.0)
+                .opacity(0.20)
+                .foregroundColor(Color.gray)
+            
+            Circle()
+                .trim(from: 0.0, to: CGFloat(min(self.progress, 1.0)))
+                .stroke(style: StrokeStyle(lineWidth: 12.0, lineCap: .round, lineJoin: .round))
+                .foregroundColor(color)
+                .rotationEffect(Angle(degrees: 270))
+                .animation(.easeInOut(duration: 2.0))
+        }
+    }
+}
+
+
+///Code from a video guide: https://youtube.com/watch?v=jyOnBUxglcA
+struct ProgressBar: View {
+    
+    var width: CGFloat = 300
+    var height: CGFloat = 20
+    var percent: CGFloat = 70
+    
+    var color: Color = Color("Primary")
+    
+    var body: some View{
+        
+        let multiplier = width / 100
+        
+        ZStack(alignment: .leading){
+            RoundedRectangle(cornerRadius: height, style: .continuous)
+                .frame(width: width, height: height)
+                .opacity(0.20)
+                .foregroundColor(Color.gray)
+            
+            RoundedRectangle(cornerRadius: height, style: .continuous)
+                .frame(width: percent * multiplier, height: height)
+                .background(
+                    LinearGradient(gradient: Gradient(colors: [Color.pink, Color("Primary")]), startPoint: .leading, endPoint: .trailing)
+                        .clipShape(RoundedRectangle(cornerRadius: height, style: .continuous))
+                )
+                .foregroundColor(.clear)
+                .animation(.easeInOut(duration: 2.0))
+            
+        }
+    }
+}
+
+
 
 #Preview {
     DashScreen()

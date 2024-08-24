@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     
     @State var Onboarded : Bool = false
-    @State var Authorised : Bool = false
     
     var body: some View {
         
@@ -20,17 +19,13 @@ struct ContentView: View {
                 OnboardingOne(Onboarded: $Onboarded)
             }
         } else {
-            if(!Authorised) {
-                AuthScreen(Authorised: $Authorised)
-            } else {
-                NavigationStack{
-                    DashScreen()
-                }
+            NavigationStack{
+                DashScreen()
             }
         }
     }
 }
 
-#Preview {
-    ContentView()
-}
+//#Preview {
+//    ContentView()
+//}

@@ -14,6 +14,7 @@ struct HealthView: View {
     var body: some View {
         VStack
         {
+            Text("Hello world! Health view:")
             ForEach(manager.healthStats){ stat in
                 Image(systemName: stat.image)
                 Text(stat.title)

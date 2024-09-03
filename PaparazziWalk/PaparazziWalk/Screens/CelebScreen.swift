@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct CelebScreen: View {
+    
+    
+    let celeb: Celebrity
+    
     var body: some View {
         ZStack{
-            Image("Ari")
+            Image(celeb.image)
             VStack{
                 Spacer()
                     .frame(height: 300)
@@ -18,14 +22,14 @@ struct CelebScreen: View {
                     VStack{
                         Spacer()
                             .frame(height:5)
-                        Text("Ariana Grande")
+                        Text(celeb.name)
                             .font(.custom("Outfit-Bold", size: 25))
                         
                         Spacer()
                             .frame(height: 10)
                         
                         Text("Walks ") +
-                        Text("10,000 - 12,000 ").font(.custom("Outfit-Bold", size: 15)) +
+                        Text("\(celeb.dailyStepsRange) ").font(.custom("Outfit-Bold", size: 15)) +
                         Text("Steps")
                         Text("a day on average.")
                         
@@ -33,7 +37,7 @@ struct CelebScreen: View {
                             .frame(height: 10)
                         
                         Text("Walked ") +
-                        Text("9,684 ").font(.custom("Outfit-Bold", size: 15)) +
+                        Text("\(celeb.todaySteps) ").font(.custom("Outfit-Bold", size: 15)) +
                         Text("Steps today.")
                         
                         Spacer()
@@ -55,8 +59,14 @@ struct CelebScreen: View {
                             .frame(height:160)
                         ZStack{
                             ZStack{
-                                Image(systemName: "paperplane")
-                                    .foregroundStyle(Color(.white))
+                                Button(action: {
+                                    let newCeleb = Celebrity(name: celeb.name, image: celeb.image, dailyStepsRange: celeb.dailyStepsRange, todaySteps: celeb.todaySteps)
+                                    saveTargetCeleb(newCeleb)
+                                }, label: {
+                                    Image(systemName: "paperplane")
+                                        .foregroundStyle(Color(.white))
+                                })
+                                
                             }
                             .frame(width:40, height:40)
                             .background(Color("Primary"))
@@ -78,6 +88,19 @@ struct CelebScreen: View {
     }
 }
 
-#Preview {
-    CelebScreen()
+
+///Base code provided by ChatGPT, altered slightly to suit my more specific usecase:============
+func saveTargetCeleb(_ celeb: Celebrity) {
+    do {
+        let encoder = JSONEncoder()
+        let data = try encoder.encode(celeb)
+        UserDefaults.standard.set(data, forKey: "TargetCeleb")
+    } catch {
+        print("Failed to encode celebrity: \(error)")
+    }
 }
+///======================================================================
+
+//#Preview {
+//    CelebScreen()
+//}

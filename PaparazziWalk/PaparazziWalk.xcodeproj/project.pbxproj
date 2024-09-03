@@ -37,6 +37,17 @@
 		D684CB752C6909440026B85E /* OnboardingOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = D684CB742C6909440026B85E /* OnboardingOne.swift */; };
 		D684CB772C690E800026B85E /* OnboardingTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D684CB762C690E800026B85E /* OnboardingTwo.swift */; };
 		D684CB792C690FA80026B85E /* OnboardingThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = D684CB782C690FA80026B85E /* OnboardingThree.swift */; };
+		D6D1D3D12C85E2AF00F8989A /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6D1D3D02C85E2AF00F8989A /* SplashScreen.storyboard */; };
+		D6D1D3D32C86285800F8989A /* CelebData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D1D3D22C86285700F8989A /* CelebData.swift */; };
+		D6D1D3D52C8632B900F8989A /* CelebListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D1D3D42C8632B900F8989A /* CelebListScreen.swift */; };
+		D6D1D3E52C86C84A00F8989A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D1D3E42C86C84900F8989A /* WidgetKit.framework */; };
+		D6D1D3E72C86C84A00F8989A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6D1D3E62C86C84A00F8989A /* SwiftUI.framework */; };
+		D6D1D3EA2C86C84A00F8989A /* StepWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D1D3E92C86C84A00F8989A /* StepWidgetBundle.swift */; };
+		D6D1D3EC2C86C84A00F8989A /* StepWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D1D3EB2C86C84A00F8989A /* StepWidgetLiveActivity.swift */; };
+		D6D1D3EE2C86C84A00F8989A /* StepWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D1D3ED2C86C84A00F8989A /* StepWidget.swift */; };
+		D6D1D3F02C86C84A00F8989A /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D1D3EF2C86C84A00F8989A /* AppIntent.swift */; };
+		D6D1D3F22C86C85200F8989A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D1D3F12C86C85200F8989A /* Assets.xcassets */; };
+		D6D1D3F62C86C85200F8989A /* StepWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D6D1D3E22C86C84900F8989A /* StepWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D6EEA0BF2C53988F00C45B87 /* PaparazziWalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA0BE2C53988F00C45B87 /* PaparazziWalkApp.swift */; };
 		D6EEA0C12C53988F00C45B87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EEA0C02C53988F00C45B87 /* ContentView.swift */; };
 		D6EEA0C32C53989700C45B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6EEA0C22C53989700C45B87 /* Assets.xcassets */; };
@@ -70,6 +81,30 @@
 		D6FEFBC82C6F639000F2B316 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = D6FEFBC72C6F639000F2B316 /* FirebaseVertexAI-Preview */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D6D1D3F42C86C85200F8989A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6EEA0B32C53988F00C45B87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6D1D3E12C86C84900F8989A;
+			remoteInfo = StepWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D6D1D3FA2C86C85200F8989A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D6D1D3F62C86C85200F8989A /* StepWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D684CB362C678F260026B85E /* AuthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreen.swift; sourceTree = "<group>"; };
 		D684CB392C6797660026B85E /* Outfit-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-VariableFont_wght.ttf"; sourceTree = "<group>"; };
@@ -97,6 +132,19 @@
 		D684CB742C6909440026B85E /* OnboardingOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingOne.swift; sourceTree = "<group>"; };
 		D684CB762C690E800026B85E /* OnboardingTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTwo.swift; sourceTree = "<group>"; };
 		D684CB782C690FA80026B85E /* OnboardingThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingThree.swift; sourceTree = "<group>"; };
+		D6D1D3D02C85E2AF00F8989A /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
+		D6D1D3D22C86285700F8989A /* CelebData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebData.swift; sourceTree = "<group>"; };
+		D6D1D3D42C8632B900F8989A /* CelebListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebListScreen.swift; sourceTree = "<group>"; };
+		D6D1D3E22C86C84900F8989A /* StepWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StepWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D1D3E42C86C84900F8989A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D6D1D3E62C86C84A00F8989A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D6D1D3E92C86C84A00F8989A /* StepWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepWidgetBundle.swift; sourceTree = "<group>"; };
+		D6D1D3EB2C86C84A00F8989A /* StepWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		D6D1D3ED2C86C84A00F8989A /* StepWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepWidget.swift; sourceTree = "<group>"; };
+		D6D1D3EF2C86C84A00F8989A /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		D6D1D3F12C86C85200F8989A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6D1D3F32C86C85200F8989A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6D1D3FB2C86CFE200F8989A /* StepWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StepWidgetExtension.entitlements; sourceTree = "<group>"; };
 		D6EEA0BB2C53988F00C45B87 /* PaparazziWalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaparazziWalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EEA0BE2C53988F00C45B87 /* PaparazziWalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaparazziWalkApp.swift; sourceTree = "<group>"; };
 		D6EEA0C02C53988F00C45B87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +158,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D6D1D3DF2C86C84900F8989A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D1D3E72C86C84A00F8989A /* SwiftUI.framework in Frameworks */,
+				D6D1D3E52C86C84A00F8989A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D6EEA0B82C53988F00C45B87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -156,6 +213,8 @@
 				D684CB532C67A9150026B85E /* DashScreen.swift */,
 				D684CB552C67D7AB0026B85E /* ProfileScreen.swift */,
 				D684CB572C67D7C90026B85E /* CelebScreen.swift */,
+				D6D1D3D42C8632B900F8989A /* CelebListScreen.swift */,
+				D6D1D3D02C85E2AF00F8989A /* SplashScreen.storyboard */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -209,12 +268,37 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		D6D1D3E32C86C84900F8989A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6D1D3E42C86C84900F8989A /* WidgetKit.framework */,
+				D6D1D3E62C86C84A00F8989A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6D1D3E82C86C84A00F8989A /* StepWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D6D1D3E92C86C84A00F8989A /* StepWidgetBundle.swift */,
+				D6D1D3EB2C86C84A00F8989A /* StepWidgetLiveActivity.swift */,
+				D6D1D3ED2C86C84A00F8989A /* StepWidget.swift */,
+				D6D1D3EF2C86C84A00F8989A /* AppIntent.swift */,
+				D6D1D3F12C86C85200F8989A /* Assets.xcassets */,
+				D6D1D3F32C86C85200F8989A /* Info.plist */,
+			);
+			path = StepWidget;
+			sourceTree = "<group>";
+		};
 		D6EEA0B22C53988F00C45B87 = {
 			isa = PBXGroup;
 			children = (
+				D6D1D3FB2C86CFE200F8989A /* StepWidgetExtension.entitlements */,
 				D684CB662C6907DD0026B85E /* GoogleService-Info.plist */,
 				D684CB382C6797660026B85E /* OutfitFont */,
 				D6EEA0BD2C53988F00C45B87 /* PaparazziWalk */,
+				D6D1D3E82C86C84A00F8989A /* StepWidget */,
+				D6D1D3E32C86C84900F8989A /* Frameworks */,
 				D6EEA0BC2C53988F00C45B87 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -223,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				D6EEA0BB2C53988F00C45B87 /* PaparazziWalk.app */,
+				D6D1D3E22C86C84900F8989A /* StepWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -240,6 +325,7 @@
 				D6EEA0C02C53988F00C45B87 /* ContentView.swift */,
 				D6EEA0C22C53989700C45B87 /* Assets.xcassets */,
 				D6EEA0C42C53989700C45B87 /* Preview Content */,
+				D6D1D3D22C86285700F8989A /* CelebData.swift */,
 			);
 			path = PaparazziWalk;
 			sourceTree = "<group>";
@@ -274,6 +360,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D6D1D3E12C86C84900F8989A /* StepWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6D1D3F72C86C85200F8989A /* Build configuration list for PBXNativeTarget "StepWidgetExtension" */;
+			buildPhases = (
+				D6D1D3DE2C86C84900F8989A /* Sources */,
+				D6D1D3DF2C86C84900F8989A /* Frameworks */,
+				D6D1D3E02C86C84900F8989A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StepWidgetExtension;
+			productName = StepWidgetExtension;
+			productReference = D6D1D3E22C86C84900F8989A /* StepWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D6EEA0BA2C53988F00C45B87 /* PaparazziWalk */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6EEA0C92C53989700C45B87 /* Build configuration list for PBXNativeTarget "PaparazziWalk" */;
@@ -281,10 +384,12 @@
 				D6EEA0B72C53988F00C45B87 /* Sources */,
 				D6EEA0B82C53988F00C45B87 /* Frameworks */,
 				D6EEA0B92C53988F00C45B87 /* Resources */,
+				D6D1D3FA2C86C85200F8989A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D6D1D3F52C86C85200F8989A /* PBXTargetDependency */,
 			);
 			name = PaparazziWalk;
 			packageProductDependencies = (
@@ -331,6 +436,9 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					D6D1D3E12C86C84900F8989A = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					D6EEA0BA2C53988F00C45B87 = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -353,11 +461,20 @@
 			projectRoot = "";
 			targets = (
 				D6EEA0BA2C53988F00C45B87 /* PaparazziWalk */,
+				D6D1D3E12C86C84900F8989A /* StepWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D6D1D3E02C86C84900F8989A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D1D3F22C86C85200F8989A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D6EEA0B92C53988F00C45B87 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,6 +488,7 @@
 				D684CB4B2C6797670026B85E /* Outfit-SemiBold.ttf in Resources */,
 				D684CB672C6907DD0026B85E /* GoogleService-Info.plist in Resources */,
 				D684CB4D2C6797670026B85E /* Outfit-ExtraBold.ttf in Resources */,
+				D6D1D3D12C85E2AF00F8989A /* SplashScreen.storyboard in Resources */,
 				D684CB502C6797670026B85E /* OFL.txt in Resources */,
 				D684CB4F2C6797670026B85E /* Outfit-Light.ttf in Resources */,
 				D684CB4C2C6797670026B85E /* Outfit-ExtraLight.ttf in Resources */,
@@ -383,6 +501,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D6D1D3DE2C86C84900F8989A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6D1D3EC2C86C84A00F8989A /* StepWidgetLiveActivity.swift in Sources */,
+				D6D1D3F02C86C84A00F8989A /* AppIntent.swift in Sources */,
+				D6D1D3EE2C86C84A00F8989A /* StepWidget.swift in Sources */,
+				D6D1D3EA2C86C84A00F8989A /* StepWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D6EEA0B72C53988F00C45B87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,6 +519,7 @@
 				D684CB542C67A9150026B85E /* DashScreen.swift in Sources */,
 				D6EEA0C12C53988F00C45B87 /* ContentView.swift in Sources */,
 				D6EEA0D12C539A6A00C45B87 /* HealthStat.swift in Sources */,
+				D6D1D3D32C86285800F8989A /* CelebData.swift in Sources */,
 				D6EEA0CE2C5399A100C45B87 /* HealthManager.swift in Sources */,
 				D684CB612C67E8DC0026B85E /* AddCheckInView.swift in Sources */,
 				D684CB5F2C67E8B80026B85E /* CheckInDetailView.swift in Sources */,
@@ -401,6 +531,7 @@
 				D6EEA0BF2C53988F00C45B87 /* PaparazziWalkApp.swift in Sources */,
 				D6FEFB9A2C6F478C00F2B316 /* FirebaseAuthManager.swift in Sources */,
 				D684CB772C690E800026B85E /* OnboardingTwo.swift in Sources */,
+				D6D1D3D52C8632B900F8989A /* CelebListScreen.swift in Sources */,
 				D684CB582C67D7C90026B85E /* CelebScreen.swift in Sources */,
 				D684CB372C678F260026B85E /* AuthScreen.swift in Sources */,
 				D684CB652C67E9800026B85E /* CheckInViewModel.swift in Sources */,
@@ -410,7 +541,71 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D6D1D3F52C86C85200F8989A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6D1D3E12C86C84900F8989A /* StepWidgetExtension */;
+			targetProxy = D6D1D3F42C86C85200F8989A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		D6D1D3F82C86C85200F8989A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = StepWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X7X493CTRK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StepWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StepWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.za.openwindow.PaparazziWalk.StepWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D6D1D3F92C86C85200F8989A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = StepWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X7X493CTRK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StepWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StepWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.za.openwindow.PaparazziWalk.StepWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D6EEA0C72C53989700C45B87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -533,6 +728,7 @@
 		D6EEA0CA2C53989700C45B87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PaparazziWalk/PaparazziWalk.entitlements;
@@ -547,6 +743,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -565,6 +762,7 @@
 		D6EEA0CB2C53989700C45B87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PaparazziWalk/PaparazziWalk.entitlements;
@@ -579,6 +777,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -597,6 +796,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D6D1D3F72C86C85200F8989A /* Build configuration list for PBXNativeTarget "StepWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6D1D3F82C86C85200F8989A /* Debug */,
+				D6D1D3F92C86C85200F8989A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D6EEA0B62C53988F00C45B87 /* Build configuration list for PBXProject "PaparazziWalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

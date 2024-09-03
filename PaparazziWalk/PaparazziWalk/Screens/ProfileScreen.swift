@@ -23,6 +23,14 @@ struct ProfileScreen: View {
             }){
                 Text("Logout")
             }
+            Button(action: {
+                ///Allowing the user to reset their onboarded status
+                UserDefaults.standard.set(false, forKey: "Onboarded")
+            }){
+                Text("Reset onboarding")
+            }
+            
+            
         } else {
             AuthScreen(firebaseAuthManager: firebaseAuthManager)
         }

@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "LanaDRPrimavera310524_(10_of_155)_(53765300307)_(cropped).jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

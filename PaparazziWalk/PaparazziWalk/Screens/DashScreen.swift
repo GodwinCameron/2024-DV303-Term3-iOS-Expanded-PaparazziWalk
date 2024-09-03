@@ -10,6 +10,25 @@ import SwiftUI
 struct DashScreen: View {
     
     @State var progressValue: Float = 0.0
+    @ObservedObject var manager = HealthManager()
+    
+    @State var TargetCeleb: Celebrity? = {
+            if let data = UserDefaults.standard.data(forKey: "TargetCeleb") {
+                do {
+                    let decoder = JSONDecoder()
+                    return try decoder.decode(Celebrity.self, from: data)
+                } catch {
+                    print("Failed to decode celebrity: \(error)")
+                    return nil
+                }
+            }
+            return nil
+        }()
+    
+    
+    
+    @State var Percentage: CGFloat = 90
+    
     
     var body: some View {
         VStack{
@@ -37,29 +56,58 @@ struct DashScreen: View {
 //                        .onAppear(){
 //                            self.progressValue = 0.50
 //                        }
-                    ProgressBar(width: 300, height: 20, percent: 20)
-                        .animation(.easeInOut(duration: 2.0))
-                    
-                    Text("2,839")
-                        .font(.system(size: 20))
-                        .foregroundStyle(Color("Primary"))
-                    Text("Steps")
-                        .font(.system(size: 9))
-                        .foregroundStyle(Color("Primary"))
-                    VStack{
-                        HStack{
-                            Text("34% of your target")
-                            Spacer()
-                                .frame(width: 175)
-                            
+                    if let targetCeleb = TargetCeleb {
+                        ForEach(manager.healthStats) { stat in
+                        ProgressBar(width: 300, height: 20, percent: Percentage)
+                            .animation(.easeInOut(duration: 2.0))
+
+                        
+                            Text(stat.amount)
+                                .font(.system(size: 20))
+                                .foregroundStyle(Color("Primary"))
                         }
-                        Text("Brad Pitt ").font(.custom("Outfit-Bold", size: 12)) +
-                        Text("walked ") +
-                        Text("4,245 ").font(.custom("Outfit-Bold", size: 12)) +
-                        Text("more steps than you today")
+                        
+                        Text("Steps")
+                            .font(.system(size: 9))
+                            .foregroundStyle(Color("Primary"))
+
+                        VStack {
+                            HStack {
+                                Text("\(String(format: "%.0f", Percentage))% ")
+                                    .font(.custom("Outfit-Bold", size: 12))
+                                 Text("of your target")
+                                     .font(.custom("Outfit-Regular", size: 12))
+                                Spacer()
+                                    .frame(width: 175)
+                            }
+                            
+                            HStack {
+                                Text(targetCeleb.name)
+                                    .font(.custom("Outfit-Bold", size: 12))
+                                Text("already walked")
+                                    .font(.custom("Outfit-Regular", size: 12))
+                                Text("\(targetCeleb.todaySteps)")
+                                    .font(.custom("Outfit-Bold", size: 12))
+                                Text("steps today!")
+                                    .font(.custom("Outfit-Regular", size: 12))
+                            }
+                        }
+                    } else {
+                        ForEach(manager.healthStats) { stat in
+                            Text(stat.amount)
+                                .font(.system(size: 20))
+                                .foregroundStyle(Color("Primary"))
+                        }
+                        ProgressBar(width: 300, height: 20, percent: Percentage)
+                            .animation(.easeInOut(duration: 2.0))
+
+                        Text("Steps")
+                            .font(.system(size: 9))
+                            .foregroundStyle(Color("Primary"))
+                        
+
+                        Text("No target celebrity set.")
                     }
-                    .font(.system(size: 12))
-                    .padding(5)
                     
                     Button(action: {}, label: {
                         Text("Change Target")
@@ -85,6 +133,9 @@ struct DashScreen: View {
                             Spacer()
                         }
                         Spacer()
+                        Image("weeklyWalk")
+                            .resizable()
+                            .frame(width: 300, height: 150)
                     }
                     .padding()
                     
@@ -114,7 +165,7 @@ struct DashScreen: View {
                             .cornerRadius(8)
                     }
                     
-                    NavigationLink(destination: CelebScreen()) {
+                    NavigationLink(destination: CelebListScreen()) {
                         VStack{
                             Text("Celebrities")
                                 .font(.custom("Outfit-Thin", size: 18))
@@ -202,6 +253,23 @@ struct ProgressBar: View {
         }
     }
 }
+
+
+/// Base code provided by ChatGPT, slightly altered to suit my specific use case: ====================
+func loadTargetCeleb() -> Celebrity? {
+    if let data = UserDefaults.standard.data(forKey: "TargetCeleb") {
+        do {
+            let decoder = JSONDecoder()
+            let celeb = try decoder.decode(Celebrity.self, from: data)
+            return celeb
+        } catch {
+            print("Failed to decode celebrity: \(error)")
+            return nil
+        }
+    }
+    return nil
+}
+/// ===========================================================================
 
 
 

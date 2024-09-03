@@ -11,6 +11,7 @@ import Foundation
 
 // ============================================================ CLASS CODE BELOW:
 import HealthKit
+import WidgetKit
 
 class HealthManager : ObservableObject
 {
@@ -95,6 +96,8 @@ class HealthManager : ObservableObject
             //the actaul number value ascosiated with step count
             let stepCountValue = quantity.doubleValue(for: .count())
             
+            self.updateWidget(newSteps: stepCountValue)
+            
             DispatchQueue.main.async
             {
                 self.healthStats.append(HealthStat(
@@ -108,6 +111,15 @@ class HealthManager : ObservableObject
             
         }
         healthStore.execute(query)
+    }
+    
+    func updateWidget(newSteps: Double)
+    {
+       let defaults = UserDefaults(suiteName: "group.co.za.openwindow.PaparazziWalk") //<-- points to group
+        defaults?.set(newSteps, forKey: "totalSteps")
+        
+        //to trigger refresh of widget:
+        WidgetCenter.shared.reloadAllTimelines()
     }
     
 }
